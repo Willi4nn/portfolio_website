@@ -15,7 +15,7 @@ class AboutMe extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 32),
+      padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 18),
       child: Column(
         children: [
           FittedBox(
@@ -24,7 +24,7 @@ class AboutMe extends StatelessWidget {
                 Row(
                   children: [
                     Text(
-                      'about me'.toUpperCase(),
+                      'sobre mim'.toUpperCase(),
                       style: GoogleFonts.montserrat(
                           fontSize: 50,
                           color: sizingInformation.deviceScreenType ==
@@ -37,7 +37,7 @@ class AboutMe extends StatelessWidget {
                 )
               ])),
           Text(
-            'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+            'Me chamo Willian, moro na cidade de Patos de Minas, atualmente estou cursando Sistemas de Informação na Unipam. Hoje sou desenvolvedor Front End, amo criar layouts para apps mobile e web, busco aperfeiçoar o meu aprendizado em Back End, para me evoluir mais como desenvolvedor.',
             textAlign:
                 sizingInformation.deviceScreenType == DeviceScreenType.mobile
                     ? TextAlign.justify

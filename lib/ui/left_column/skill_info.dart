@@ -16,7 +16,7 @@ class SkillInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 32),
+        padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 32),
         child: Column(children: [
           FittedBox(
               fit: BoxFit.fitWidth,
@@ -38,23 +38,23 @@ class SkillInfo extends StatelessWidget {
               ])),
           DetailSkill(
               skillName: 'JavaScript',
-              skillValue: 0.7,
+              skillValue: 0.6,
               sizingInformation: sizingInformation),
           DetailSkill(
               skillName: 'HTML',
-              skillValue: 0.8,
+              skillValue: 0.7,
               sizingInformation: sizingInformation),
           DetailSkill(
               skillName: 'CSS',
-              skillValue: 0.8,
+              skillValue: 0.7,
               sizingInformation: sizingInformation),
           DetailSkill(
               skillName: 'Dart',
-              skillValue: 0.3,
+              skillValue: 0.2,
               sizingInformation: sizingInformation),
           DetailSkill(
               skillName: 'Python',
-              skillValue: 0.5,
+              skillValue: 0.4,
               sizingInformation: sizingInformation)
         ]));
   }
@@ -75,7 +75,7 @@ class DetailSkill extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 16),
+      padding: const EdgeInsets.symmetric(vertical: 8),
       child: Row(
         children: [
           Text(
